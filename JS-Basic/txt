@@ -1,0 +1,330 @@
+1. What is console.log()?
+=> The console.log() is a function in JavaScript which is used to print any
+   kind of variables defined before in it or to just print any message that 
+   needs to be displayed to the user.
+
+2. What is Variable's?
+=> Variables are containers for storing data.
+   In JavaScript, there are three different variable types:
+   1. VAR : The var is the oldest keyword to declare a variable in JavaScript. 
+            Variables declared Globally (outside any function) have Global Scope.
+
+   2. LET : The let keyword is an improved version of the var keyword.
+            The scope of a let variable is only block scoped. It can’t 
+            be accessible outside the particular block ({block}).
+
+   3. CONST : The user cannot update the const variable once it is declared. 
+              as the let keyword, except the user cannot update it.
+               When users declare a const variable, they need to initialize it,
+               otherwise, it returns an error.  
+
+3. What is Variable Scope? 
+=> 1. Global Scope - Scope outside the outermost function attached to Window.
+   2. Local Scope  - Inside the function being executed.
+
+4. Variables Nameing Rules?
+=> 1. No Spaces - var first Name(this is invalid),
+                  var firstName (this is valid).
+   2. Must begin with - , $ or a letter.
+   3. Can contain letter, numbers, underscore and doller sign. - var 89ab (this is invalid),
+                                                                 var ab89_$ (this all are valid).
+   4. Case Sensitive. - var firstName = 'Nikhil';
+                        console.log(firstname) this is invalid,
+                        var firstName = 'Nikhil';
+                        console.log(firstName) this is valid.
+
+5. What is Data Type?
+=> Data types describe the different types or kinds of data that we are gonna be working
+   with and storing in variables. 
+
+6. How many types of Data Type?
+=> There are 6 basic, or primitive, types of data.
+   1. Strings   -  “Hello World!” etc.
+   2. Numbers   -  5, 6.5, 7 etc.
+   3. Booleans  -  Represent a logical entity and can have two values: true or false.
+   4. Undefined -  A variable that has not been assigned a value is undefined.
+   5. Null      -  This type has only one value : null.
+   6. Object    -  The object is a complex data type that allows you to store collections of data.
+
+7. How do I know data type?
+=> Use the type() function. - console.log(typeof);
+
+8. What is String?
+=> A string is a sequence of one or more characters that may consist of letters,
+   numbers, or symbols.
+
+9. What is Arithmetic Operator?
+=> An operator that performs arithmetic operations on groups and numbers.
+   Arithmetic Operator like :
+   1. +(Addition) : '+' operator performs addition on two operands. 
+      Example     : A = 5 + 5 gives A = 10;
+
+   2. -(Subtraction) : '-' operator performs subtraction on two operands. 
+      Example        : A = 5 - 2 gives A = 3;
+
+   3. *(Multiplication) : '*' operator performs multiplication on two operands. 
+      Example           : A = 5 * 5 gives A = 25;
+
+   4. /(Division) : '/' operator performs division on two operands (divide the numerator by the denominator). 
+      Example     : A = 5 / 5 gives A = 1;
+
+   5. %(Modulus) : '%' operator gives remainder of an integer division. 
+      Example    :  A % B means remainder (A/B)
+                    C = 5 % 4 gives Y = 1
+
+   6. ++(Increment) : '++' operator increases an integer value by one. 
+      Example       : let A = 10 and B = A ++ then A = 11, B=10
+                      if  A = 10 and B = ++ A then A = 11, B=11
+
+   7. --(Decrement) : '--'operator decreases an integer value by one. 
+      Example       : let A = 10 and B = A -- then A = 9, B = 10
+                      if  A = 10 and B = -- A then A = 9, B = 9
+
+10. what are Assignment Operators?
+=>  An assignment operator assigns a value to its left operand based on the value of its right
+    operand.
+    Assignment Operators Like :
+
+   1. =(Assignment Operator) : Assigns right operand value to left operand. 
+      Example                : If A = 10 and B = A then B = 10.
+
+   2. += (Add and Assignment Operator) : Sums up left and right operand values and then assign the result to the left operand. 
+      Example                          : A += 1 gives A = A + 1
+
+   3. -= (Subtract and Assignment Operator) : It subtract right side value from left side value and then assign the result to the left operand. 
+      Example                               : A -= 1 gives A = A - 1
+
+   4. Similarly there are *= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment) 
+      Example: Y *= A is equivalent to Y = Y * A
+               Y /= A is equivalent to Y = Y / A
+               Y %= A is equivalent to Y = Y % A                    
+
+11. What is Comparison Operators?
+=>  Comparison operators — operators that compare values and return true or false.
+    Comparison Operators like :
+
+   1. == : Compares the equality of two operands. 
+           If equal then the condition is true otherwise false. 
+      Example : A = 5 and B = 6
+              A == B is false.  
+* Note : Type not considered in '==' operator.           
+
+   2. === : This operator compares equality of two operands with type.
+            If equal(type and value both) then condition is true otherwise false.    
+      Example : given A = 10 then A === "10" is false.
+                A === 10 is true.      
+
+   3. !=(Not Equal): Compares inequality of two operands. True if operands are not equal. 
+      Example      : given A = 10 then A ! = 11 is true.
+
+
+   4. >(Greater than): This operator checks whether the left side value is greater than the 
+                       right side value. If yes then it returns true otherwise it returns false. 
+      Example : given A = 10 then A > 11 is false.
+
+   5. <(Less than) : This operator checks whether the left side value is less than right side
+                     value. If yes then it returns true otherwise it returns false. 
+      Example      : given A = 10 then A < 11 is true.
+
+   6. >=(Greater than or Equal to): This operator checks whether the left side operand is greater
+                                    than or equal to the right side operand. 
+                                    If yes then it returns true otherwise it returns false. 
+      Example                     : given A = 10 then A > = 11 is false.
+
+   7. <=(Less than or Equal to) : This operator checks whether the left side operand value is
+                                  less than or equal to the right side operand value.
+                                  If yes then it returns true otherwise it returns false. 
+      Example                   : given A = 10 then A < = 10 is true.
+
+12. What is Logical Operators?
+=>  Logical operators are typically used with Boolean (logical) values;
+    when they are, they return a Boolean value.
+    Logical Operators Like :
+
+   1. &&(Logical AND): It checks whether two operands are non-zero
+                        (0, false, undefined, null or “” are considered as zero) 
+                        if yes then return 1 otherwise 0. 
+      Example        : A = 5 and B = 6
+                       A && B is true.
+
+   2. ||(Logical OR) : It checks whether any one of the two operands is non-zero
+                       (0, false, undefined, null, or “” is considered as zero).
+                       Thus || returns true if either operand is true and if both are
+                       false it returns false. 
+      Example : A = 5 and B = 0
+                A || B is true.
+
+   3. !(Logical NOT): It reverses the boolean result of the operand (or condition). 
+      Example       : A = 5 and B = 0
+                      !(A || B) is false.  
+
+13. What is Ternary Operator?
+=>  The conditional operator assigns a value to a variable based on a condition.
+    Ternary Operator like :
+
+   1. : ?Operator : It is like the short form of the if-else condition. 
+        Syntax    : A =  ? B : C 
+
+   2. Where A and B are values and if condition is true then C = A otherwise C = B. 
+      Example: C = (6>5) ? 6 : 5
+     therefore C = 6
+
+   3. typeof Operator: It returns the type of a variable. 
+      Syntax:  typeof variable;
+
+14. What is Array?
+=>  It means a list of things. Array lets us store multiple values in a single variable.
+
+15. What is array index?
+=>  Arrays are zero-indexed. The first element of an array is at index 0,
+    the second is at index 1. 
+   * NOTE : Storing number, boolean, strings in an Array
+            let house = ["1BHK", 25000, "2BHK", 50000, "Rent", true];
+
+16. What is Length property of an Array?            
+=>  Length property of an Array returns the length of an Array.
+    Length of an Array is always one more than the highest index of an Array.
+
+17. What is array method?
+=>  Array is a built-in global object that allows you to store multiple elements at once.
+    
+   1. Array.push() : The push() method adds new items to the end of an array. 
+           Syntax  : Array.push(item1, item2 …)
+
+   2. Array.unshift() : Adding elements at the front of an Array.
+              Syntax  : Array.unshift(item1, item2 …)
+
+   3. Array.pop() : Removing elements from the end of an array.
+           Syntax : Array.pop()
+
+   4. Array.shift() : Removing elements at the beginning of an array        
+             Syntax : Array.shift()
+
+   5. Array.splice() : Insertion and Removal in between an Array.
+              Syntax : Array.splice (start, deleteCount, item 1, item 2….)          
+   
+   6. Array sort() : The arr.sort() method is used to sort the array in place in a given order
+                     according to the compare() function.
+                     If the method is omitted then the array is sorted in ascending order.
+            Syntax : arr.sort(compareFunction)         
+
+18. What is  Array Iteration Methods?
+=>  Iteration methods operate on every item in an array, and often perform a new function.
+
+     Array Iteration Methods like :
+
+      1. Array forEach() : The arr. forEach() method calls the provided function once for each
+                           element of the array.                      
+                  Syntax : array.forEach(function callback(value, index, array){
+                           }[ThisArgument]); 
+
+      2.  Array map() : Map() creates a new array from calling a function for every array element.
+               Syntax : array.map(function(value, index, array){
+                        }[ThisArgument]); 
+
+      3.  Array filter() : The filter() method creates a new array filled with elements
+                           that pass a test provided by a function.                             
+                  Syntax : array.filter(callback(element, index, arr), thisValue)
+
+      4. Array reduce() : The reduce() method executes a reducer function for array element.
+               Syntax   :  array.reduce(function (args) {
+                                     // code;
+                           });       
+      5. Array reduceRight() : Array reduceRight() method executes a reducer function on each
+                               element of the array and applies it against an accumulator.
+                     Syntax  : array.reduceRight( function(total, currentValue, currentIndex,
+                               arr),initialValue)
+
+      6. Array every() : The every() method executes a function for each array element.
+               Syntax  : arr.every(callback(element[, index[, array]])[, thisArg])
+
+      7. Array some() : The some() method checks if any array elements pass a test
+                        (provided as a function).
+               Syntax : arr.every(callback(element[, index[, array]])[, thisArg])  
+
+      8. Array indexOf() : The indexOf() method returns the first index (position) of a
+                           specified value.
+                  Syntax : array.indexOf(element, start)
+
+      9. Array lastIndexOf() : The lastIndexOf() method returns the last index at which a
+                               given element can be found in the array,
+                               or -1 if it is not present.
+                     Syntax  : array.lastIndexOf(element, start)
+
+      10. Array find() : The find() method returns the value of the first element that
+                         passes a test. 
+               Syntax  : array.find(function(currentValue, index, arr),thisValue);
+
+      11. Array findIndex() : The findIndex() method returns the index (position)
+                              of the first element that passes a test.
+                     Syntax : array.findIndex(function(currentValue, index, arr), thisValue)
+
+      12. Array.from() : The Array. from() method returns an array from any object with a
+                         length property.
+               Syntax  :  const array_name = [item1, item2, ...]
+
+      13. Array Keys() : The array. keys() method is used to return a new array iterator
+                         which contains the keys for each index in the given input array.
+
+      14. Array entries() : In JavaScript, entries() is an Array method that is used to
+                           return a new Array iterator object that allows you to iterate
+                           through the key/value pairs in the array.      
+
+      15. Array includes() : The includes() method returns true if an array contains a 
+                             specified value.
+
+19. What is Object Literal?
+=>  Object Literal is a container which store multiple values in key-value pair.
+
+20. What is Array of Object Literals?
+=>  An array literal is a list of zero or more expressions,
+    each of which represents an array element, enclosed in square brackets ( [] ). 
+
+21. Conditionals.
+=>  1. IF/ELSE : The if/else statement executes a block of code if a specified condition is true.
+                 If the condition is false, another block of code can be executed.
+
+    2. ELSE IF : Use else to specify a block of code to be executed, if the same condition is
+                 false. 
+
+22. What is Switch Case?
+=>  The switch statement executes a block of code depending on different cases. 
+
+23. What is Loop?
+=>  Loops are used in JavaScript to perform repeated tasks based on a condition.
+    Conditions typically return true or false.
+
+    1. For Loop : For loop iterates the elements for the fixed number of times. 
+         Syntax : for (statement 1 ; statement 2 ; statement 3);
+      Statement :
+
+    >  Statement 1 is the initialization of the counter. 
+       It is executed once before the execution of the code block.
+    >  Statement 2 is the testing statement that defines the conditionfor executing the code
+       block It must return a boolean value. It is also an entry controlled loop
+       as the condition is checked before the execution of the loop statements.
+    >  Statement 3 is increment or decrement of counter & executed
+       (every time) after the code block has been executed.  
+
+    2. While Loop : The while statement creates a loop that executes a specified statement
+                    as long as the test condition evaluates to true.
+
+    3. Do-While Loop : The do-while statement creates a loop that executes a specified statement
+                       until the test condition evaluates to false. 
+
+24. What is Function ? 
+=>  A group/block of code that perform a particular task.
+    Syntax: function functionName(Parameter1, Parameter2, ..)
+            {
+                           // Function body
+            }
+
+25. What is Function Body?
+=>  A function is composed of a sequence of statements called the function body.
+    
+26. What is Return Function?
+=>  The return statement stops the execution of a function and returns a value.
+
+27. What is Arrow Function?
+=>  Arrow function allows you to create functions in a cleaner way compared to regular functions.
+
