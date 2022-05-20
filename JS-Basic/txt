@@ -280,8 +280,10 @@
 =>  An array literal is a list of zero or more expressions,
     each of which represents an array element, enclosed in square brackets ( [] ). 
 
-21. Conditionals.
-=>  1. IF/ELSE : The if/else statement executes a block of code if a specified condition is true.
+21. What is Conditional statements?
+=>  Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run.
+
+    1. IF/ELSE : The if/else statement executes a block of code if a specified condition is true.
                  If the condition is false, another block of code can be executed.
 
     2. ELSE IF : Use else to specify a block of code to be executed, if the same condition is
